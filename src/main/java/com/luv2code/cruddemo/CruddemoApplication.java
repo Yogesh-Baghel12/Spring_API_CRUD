@@ -6,7 +6,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 import com.luv2code.cruddemo.dao.StudentDAO;
-import com.luv2code.cruddemo.entity.Student;
 
 @SpringBootApplication
 public class CruddemoApplication {
@@ -22,16 +21,6 @@ public class CruddemoApplication {
 	}
 	private void createStudent(StudentDAO studentDAO) {
 		//create student object
-		System.out.println("create");
-		String email;
-		String lastName;
-		String firstName;
-		Student tempStudent=new Student(0,firstName="Paul", lastName="Doe",email="paul@gmail.com");
-		
-		System.out.println("save");
-		studentDAO.save(tempStudent);
-		
-		System.out.println("Saved Student. Generated id:"+tempStudent.getId());
 		
 	}
 
